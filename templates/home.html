@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telecom Churn Prediction</title>
+</head>
+<body>
+
+<h2>Telecom Customer Churn Prediction</h2>
+
+<form method="POST">
+    <input name="query1" placeholder="SeniorCitizen (0/1)" required><br><br>
+    <input name="query2" placeholder="MonthlyCharges" required><br><br>
+    <input name="query3" placeholder="TotalCharges" required><br><br>
+    <input name="query4" placeholder="Gender (Male/Female)" required><br><br>
+    <input name="query5" placeholder="Partner (Yes/No)" required><br><br>
+    <input name="query6" placeholder="Dependents (Yes/No)" required><br><br>
+    <input name="query7" placeholder="PhoneService (Yes/No)" required><br><br>
+    <input name="query8" placeholder="MultipleLines" required><br><br>
+    <input name="query9" placeholder="InternetService" required><br><br>
+    <input name="query10" placeholder="OnlineSecurity" required><br><br>
+    <input name="query11" placeholder="OnlineBackup" required><br><br>
+    <input name="query12" placeholder="DeviceProtection" required><br><br>
+    <input name="query13" placeholder="TechSupport" required><br><br>
+    <input name="query14" placeholder="StreamingTV" required><br><br>
+    <input name="query15" placeholder="StreamingMovies" required><br><br>
+    <input name="query16" placeholder="Contract" required><br><br>
+    <input name="query17" placeholder="PaperlessBilling" required><br><br>
+    <input name="query18" placeholder="PaymentMethod" required><br><br>
+    <input name="query19" placeholder="Tenure (months)" required><br><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+{% if output1 %}
+    <h3>{{ output1 }}</h3>
+    <p>{{ output2 }}</p>
+{% endif %}
+
+</body>
+</html>
